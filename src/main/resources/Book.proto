@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package baeldung;
+
+option java_package = "com.jooq.h2.spring";
+option java_outer_classname = "BookDataProto";
+
+message BookList {
+    repeated Book book =1;
+}
+
+message Book {
+	int32 published = 3;
+	int32 authorId = 2;
+	string bookTitle = 1;
+
+}
+
+
+
+
